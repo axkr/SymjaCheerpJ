@@ -8,7 +8,7 @@
   <body>
     <script> 
       (async function () {
-        await cheerpjInit({version:11, clipboardMode: "system", javaProperties: ["log4j2.disableJmx=true"], enableDebug:true});
+        await cheerpjInit({version:11, clipboardMode: "system", javaProperties: ["log4j2.disableJmx=true", "apfloat.disableJmx=true"], enableDebug:true});
         
         cheerpjCreateDisplay(800, 600); 
         await cheerpjRunMain(
