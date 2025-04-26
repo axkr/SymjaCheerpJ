@@ -4,7 +4,9 @@ The `SymjaRepl` supports the usage of the [Symja Computer Algebra library](https
 
 ## Getting started
 
-- Copy this repository to a folder in your local file system
+- Copy this repository to a new folder in your local file system
+- Export the `symja-fat.jar` file within Eclipse from the [SymjaRepl repository](https://github.com/axkr/SymjaRepl)
+- Copy `symja-fat.jar` to the new folder
 - You can now serve this local folder as a web page on a simple HTTP server, such as the http-server utility, with the command:
 
 ```
