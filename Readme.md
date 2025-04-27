@@ -1,5 +1,7 @@
 ﻿# SymjaCheerpJ
 
+[![Join our Discord](https://img.shields.io/discord/869895703718166529?color=7289da&label=Join%20our%20Discord&logo=discord&style=for-the-badge)](https://discord.gg/tYknzr2qam)
+
 The `SymjaRepl` supports the usage of the [Symja Computer Algebra library](https://github.com/axkr/symja_android_library) in a [CheerpJ (version >= 4.0)](https://cheerpj.com) browser environment.
 
 ## Getting started
