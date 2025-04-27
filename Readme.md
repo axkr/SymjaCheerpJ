@@ -1,6 +1,6 @@
 ﻿# SymjaCheerpJ
 
-The `SymjaRepl` supports the usage of the [Symja Computer Algebra library](https://github.com/axkr/symja_android_library) in a [CheerpJ](https://cheerpj.com) browser environment.
+The `SymjaRepl` supports the usage of the [Symja Computer Algebra library](https://github.com/axkr/symja_android_library) in a [CheerpJ (version >= 4.0)](https://cheerpj.com) browser environment.
 
 ## Getting started
 
