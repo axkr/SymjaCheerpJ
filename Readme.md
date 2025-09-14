@@ -8,16 +8,30 @@ Currently the nightly builds (>= 20250907_2731) https://cjrtnc.leaningtech.com/2
 
 ## Getting started
 
-- Copy this repository to a new folder in your local file system
-- Export the `symja-fat.jar` file within Eclipse from the [SymjaRepl repository](https://github.com/axkr/SymjaRepl)
-- Copy `symja-fat.jar` to the new folder
-- You can now serve this local folder as a web page on a simple HTTP server, such as the http-server utility, with the command:
+- Clone the corresponding [SymjaRepl repository](https://github.com/axkr/SymjaRepl) repository and build the `SymjaREPL` JAR using Maven.
+- Open a terminal in the SymjaREPL directory.
+- Run the following Maven command to clean and package the project:
+
+```
+mvn clean package
+```
+
+This process will:
+*  Compile the source code.
+*  Resolve all dependencies.
+*  Use the Maven Shade Plugin to create a minimized, self-contained JAR (`SymjaREPL-3.1.0-SNAPSHOT-shaded.jar`) in the target directory. This JAR contains all dependencies and is optimized for size.
+
+Prepare the JAR for the web environment:
+* Now clone the `SymjaCheerpJ` repository to a new folder on your local file system.
+* Copy and rename the generated JAR from `SymjaREPL/target/SymjaREPL-3.1.0-SNAPSHOT-shaded.jar` to `symja-shaded.jar` in your project root folder.
+* Serve the folder via HTTP
+* Use a simple HTTP server, for example:
 
 ```
 npx http-server -p 8080
 ```
 
-Open the following URL in your web browser:
+Open your browser at:
 
 ```
 http://localhost:8080/index.html
