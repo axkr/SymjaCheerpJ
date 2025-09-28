@@ -13,17 +13,18 @@ Currently the nightly builds (>= 20250907_2731) https://cjrtnc.leaningtech.com/2
 - Run the following Maven command to clean and package the project:
 
 ```
-mvn clean package
+mvn clean package verify
 ```
 
 This process will:
 *  Compile the source code.
 *  Resolve all dependencies.
-*  Use the Maven Shade Plugin to create a minimized, self-contained JAR (`SymjaREPL-3.1.0-SNAPSHOT-shaded.jar`) in the target directory. This JAR contains all dependencies and is optimized for size.
+*  Use the Maven Shade Plugin to package a self-contained JAR (`SymjaREPL-3.1.0-SNAPSHOT-shaded.jar`) in the `/target` directory. This JAR contains all dependencies.
+*  Use the Proguard Shade Plugin to create a minimized, self-contained JAR (`SymjaREPL-3.1.0-SNAPSHOT-obfuscated.jar`) in the `/target` directory. This JAR is optimized for size.
 
 Prepare the JAR for the web environment:
 * Now clone the `SymjaCheerpJ` repository to a new folder on your local file system.
-* Copy and rename the generated JAR from `SymjaREPL/target/SymjaREPL-3.1.0-SNAPSHOT-shaded.jar` to `symja-shaded.jar` in your project root folder.
+* Copy the generated JAR from `SymjaREPL/target/SymjaREPL-3.1.0-SNAPSHOT-obfuscated.jar` to `SymjaCheerpJ/SymjaREPL-3.1.0-SNAPSHOT-obfuscated.jar` in your project root folder.
 * Serve the folder via HTTP
 * Use a simple HTTP server, for example:
 
