@@ -6,6 +6,8 @@ The `SymjaRepl` supports the usage of the [Symja Computer Algebra library](https
 
 Currently the nightly builds (>= 20250907_2731) https://cjrtnc.leaningtech.com/20250907_2731/loader.js fixes some important bugs.
 
+<img src="https://github.com/axkr/SymjaCheerpJ/symja_cheerpj.png" width="auto" height="auto"> 
+
 ## Getting started
 
 - Clone the corresponding [SymjaRepl repository](https://github.com/axkr/SymjaRepl) repository and build the `SymjaREPL` JAR using Maven.
